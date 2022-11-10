@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <title>Week 8 lab</title>
+    <link rel="stylesheet" href="style.css">
+	  <!-- add the link tag to the style.css which will be in a folder -->
+
+	</head>
+	<body>
+		<h1>Graded lab exercise - week 8</h1>
+		<ol>
+			<li>Add 3 examples of JavaScript code</li>
+			<li>Create a repo in GitHub and add your project when finished</li>
+			<li>Save the link to the GitHub repo in a text document and upload it to Moodle</li>
+			<ul>
+				<li>Your link should look like this https://github/username/repoName.git</li>
+			</ul>
+		</ol>
+
+    <hr>
+
+    <h2> Javascript example 1</h2>
+
+    <p id="demo2" onmouseover="usinginnerHTML()"> Demo Using HTML</p>
+
+    <form>
+      <label>Enter your name:</label>
+      <input type="text" id="demo3" </input>
+      <input type="button" value="click me" onclick="usingValue()"></input>
+      </form>
+
+	  <script type="text/javascript">
+      function usinginnerHTML(){
+        var txt = document.getElementById('demo2');
+        alert(text.innerHTML);
+      }
+
+      function usingValue(){
+        var name = document.getElementById('demo3');
+        alert(name.value);
+      }
+	  </script>
+
+    <hr>
+    <h3> Javascript example 2 </h3>
+
+<button type="button" name="button" onclick="randomNumber();"> Click me for random number</button>
+<p id="displayNumber"> here are the numbers</p>
+
+<script type="text/javascript">
+  function randomNumber() {
+    var fRandomNumber = Math.random();
+
+    var sPreviousContent = document.getElementById('displayNumber').innerHTML;
+
+    document.getElementById('displayNumber').innerHTML = sPreviousContent + "<br>" + fRandomNumber;
+  }
+</script>
+
+<hr>
+
+<h3> Example 3 is the first alert message </h3>
+<script type="text/javascript">
+	var userName = prompt("your name please");
+	greetuser();
+
+	function greetUser(myName){
+		alert("hello" + myName);
+	}
+</script>
+
+	</body>
+</html>
